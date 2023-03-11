@@ -272,7 +272,7 @@ li:before {
 
 .profile_frame{
 	width: 200px;
-	height: 260px;
+	height: auto;
 	background: black;
 	border: 1px solid #403F44;
 	margin-top: 30px;
@@ -410,7 +410,7 @@ margin-bottom: 8px;
 .profile_quote  .entypo-quote {
 	color: #3d3a41;
 	font-size: 80px;
-font-style: normal;
+	font-style: normal;
 	position: absolute;
 	top: -20px;
 	right: 70px;
