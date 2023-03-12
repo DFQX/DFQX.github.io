@@ -11,14 +11,14 @@
 /* Utils */
 
 .bg_color{
-    color: # 3789aa;
+    color: # ffffff;
 }
 
 .clear {
 	clear: both;
 }
 .purple {
-	color: #837c9a;
+	color: black;
 }
 
 .block {
@@ -262,6 +262,25 @@ li:before {
 .header_menu a:hover {
 	color: #837c9a;
 }
+
+.edu_menu {
+	width: 100%;
+	margin-top: 40px;
+	margin-left: 5px;
+}
+.edu_menu a{
+	text-decoration: none;
+	padding: 0 20px;
+	border-left: 1px solid #e4e3e8;
+	font-size: 16px;
+	font-weight: 400;
+}
+.edu_menu a.no_border{
+	border-left: none;
+}
+.edu_menu a:hover {
+	color: #837c9a;
+}
 		
 /* LEFT NAV */
 
@@ -278,8 +297,8 @@ li:before {
 	margin-top: 30px;
 }
 .profile_picture{
-	width: 210px;
-	height: auto;
+	width: 200px;
+	height: 240px;
 	margin:10px;
 	background: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/86033/profile/profile-512_3.jpg) 100% /210px no-repeat;
 }
@@ -426,6 +445,19 @@ margin-bottom: 8px;
 	float: left;
 }
 .philosophy_content ul {
+	float: left;
+	padding-left: 40px;
+}
+
+.education_content {
+	margin-top: 20px;
+}
+.education_content p {
+	margin: 0;
+	width: 370px;
+	float: left;
+}
+.education_content ul {
 	float: left;
 	padding-left: 40px;
 }
