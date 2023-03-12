@@ -11,7 +11,7 @@
 /* Utils */
 
 .bg_color{
-    color: # ffffff;
+    color: #555555;
 }
 
 .clear {
@@ -70,7 +70,7 @@
 .central_circle, 
 .right_circle {
 	background: rgb(69,68,73);
-	background: rgba(255,255,255, 0.15);
+	background: rgb(196 110 192 / 15%);
 	position: absolute;
 	border-radius: 50px;
 }
@@ -129,11 +129,11 @@ blockquote {
 	border-left: 2px solid #48DA9B;
 }
 	
-blockquote, p , a, li {
+blockquote, p, a, li {
 	font-family: 'Lato', Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 15px;
-	color: #e4e3e8;
+	color: #74674ac2;
 }
 
 a:focus { 
@@ -180,6 +180,16 @@ li:before {
 .header_menu_container a {
 	font-family: 'Lato', Helvetica, sans-serif;
 }
+
+.edu_menu_container {
+	height: 90px;
+	width: 699px;
+	float: left;
+}
+.edu_menu_container a {
+	font-family: 'Lato', Helvetica, sans-serif;
+}
+
 #left_col {
 	width: 250px;
 	float: left;
@@ -248,6 +258,7 @@ li:before {
 	width: 699px;
 	margin-top: 40px;
 	margin-left: 5px;
+	padding-top: 20px;
 }
 .header_menu a{
 	text-decoration: none;
@@ -265,7 +276,7 @@ li:before {
 
 .edu_menu {
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 25px;
 	margin-left: 5px;
 }
 .edu_menu a{
@@ -281,7 +292,10 @@ li:before {
 .edu_menu a:hover {
 	color: #837c9a;
 }
-		
+
+.edu_color h3{
+	color: #52354e
+}
 /* LEFT NAV */
 
 #left_nav h2 {
@@ -292,9 +306,9 @@ li:before {
 .profile_frame{
 	width: 200px;
 	height: auto;
-	background: black;
-	border: 1px solid #403F44;
-	margin-top: 30px;
+	/*background: black;*/
+	border: 0px solid #403F44;
+	margin-top: 38px;
 }
 .profile_picture{
 	width: 200px;
@@ -326,7 +340,7 @@ li:before {
 	margin-top: 25px;
 	display: block;
 	background: #48DA9B;
-	width: 230px;
+	width: 70%;
 	height: 50px;
 	position: relative;
 	z-index: 1;
@@ -398,7 +412,7 @@ margin-bottom: 8px;
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 50px;
 }
-.social_icons .twitter:hover{
+.social_icons .github:hover{
 	background: #00B0ED;
 	color: #fff;
 	border-top-left-radius: 50px;
