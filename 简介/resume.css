@@ -54,6 +54,22 @@
 	height: 26px;
 	position: relative;	
 }
+
+.pro_list{
+	width: 100%;
+	margin-top:10px;
+}
+
+.pro_list li:before {
+	content: none;
+	
+}
+
+.pro_list li {
+	width: 100%;
+	margin-top:5px;
+}
+
 .line_left,
 .line_right{
 	border-top: 1px solid #434247;
@@ -182,7 +198,7 @@ li:before {
 }
 
 .edu_menu_container {
-	height: 90px;
+	/* height: 90px; */
 	width: 699px;
 	float: left;
 }
@@ -198,6 +214,7 @@ li:before {
 	width: 699px;
 	border-left: 1px solid #403F44;
 	float: left;
+	padding-bottom: 30px;
 }
 #footer {
 	width: 960px;
@@ -281,8 +298,8 @@ li:before {
 }
 .edu_menu a{
 	text-decoration: none;
-	padding: 0 20px;
-	border-left: 1px solid #e4e3e8;
+	padding: 0 10px;
+	/*border-left: 1px solid #e4e3e8;*/
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -291,6 +308,10 @@ li:before {
 }
 .edu_menu a:hover {
 	color: #837c9a;
+}
+
+.project {
+	width: 39%;
 }
 
 .edu_color h3{
