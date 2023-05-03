@@ -35,10 +35,9 @@
 <meta property="og:image" content="https://dfqx.github.io/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503194523202.png">
 <meta property="og:image" content="https://dfqx.github.io/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503194817362.png">
 <meta property="og:image" content="https://dfqx.github.io/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503194935313.png">
-<meta property="og:image" content="https://dfqx.github.io/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230502195615079.png">
 <meta property="og:image" content="https://dfqx.github.io/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503184335281.png">
 <meta property="article:published_time" content="2023-05-02T10:33:01.000Z">
-<meta property="article:modified_time" content="2023-05-03T11:50:43.799Z">
+<meta property="article:modified_time" content="2023-05-03T11:54:34.005Z">
 <meta property="article:author" content="大风起兮">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary_large_image">
@@ -454,13 +453,13 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">if</span>(href.<span class="hljs-title function_">indexOf</span>(<span class="hljs-string">&#x27;/&#x27;</span>)&gt;-<span class="hljs-number">1</span>)&#123;<br>    <span class="hljs-keyword">var</span> arr = href.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;/&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(arr);<br>    href = arr[arr.<span class="hljs-property">length</span>-<span class="hljs-number">1</span>];<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>现在就可以在本地和部署后浏览器中都能查看图片了。</p>
-<h3 id="3-4-解析图片路径出现的问题"><a href="#3-4-解析图片路径出现的问题" class="headerlink" title="3.4 解析图片路径出现的问题"></a>3.4 解析图片路径出现的问题</h3><p>如果上面已经解决了问题，可以不用看这一节。在本机配置过程中出现了一个非常严重的错误，导致按照上面的步骤不通过。当执行命令<code>hexo g</code>时出现下面的问题：</p>
+<h3 id="3-5-解析图片路径出现的问题"><a href="#3-5-解析图片路径出现的问题" class="headerlink" title="3.5 解析图片路径出现的问题"></a>3.5 解析图片路径出现的问题</h3><p>如果上面已经解决了问题，可以不用看这一节。在本机配置过程中出现了一个非常严重的错误，导致按照上面的步骤不通过。当执行命令<code>hexo g</code>时出现下面的问题：</p>
 <p><img src="/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503194523202.png" srcset="/img/loading.gif" lazyload alt="image-20230503194523202"></p>
 <p>这个问题会导致生成的html文件中路径无缘无故包含<code>/.io//</code>的前缀，这是解析出错了。通过执行<code>npm audit</code>命名发现npm有一个包出现问题。</p>
 <p><img src="/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503194817362.png" srcset="/img/loading.gif" lazyload alt="image-20230503194817362"></p>
 <p>通过<code>npm un hexo-asset-image</code>命令，移除hexo-asset-image插件，之后执行上述步骤就没有出现问题了。</p>
 <p><img src="/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503194935313.png" srcset="/img/loading.gif" lazyload alt="image-20230503194935313"></p>
-<h2 id="4-编辑器"><a href="#4-编辑器" class="headerlink" title="4. 编辑器"></a>4. 编辑器</h2><h3 id="4-1-Typora编辑器"><a href="#4-1-Typora编辑器" class="headerlink" title="4.1 Typora编辑器"></a>4.1 Typora编辑器</h3><p>Typora编辑器可以将复制到文章的图片自动保存在同名文件夹下。在文件-&gt;偏好设置-&gt;图像-&gt;选择复制到指定路径。<br><img src="/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230502195615079.png" srcset="/img/loading.gif" lazyload alt="image-20230502195615079">  </p>
+<h2 id="4-编辑器"><a href="#4-编辑器" class="headerlink" title="4. 编辑器"></a>4. 编辑器</h2><h3 id="4-1-Typora编辑器"><a href="#4-1-Typora编辑器" class="headerlink" title="4.1 Typora编辑器"></a>4.1 Typora编辑器</h3><p>Typora编辑器可以将复制到文章的图片自动保存在同名文件夹下。在文件-&gt;偏好设置-&gt;图像-&gt;选择复制到指定路径。</p>
 <p><img src="/2023/05/02/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2post%E9%A1%B5%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE/image-20230503184335281.png" srcset="/img/loading.gif" lazyload alt="Typora图像设置"></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/132823826">使用hexo新建、编辑并预览文章</a></li>
