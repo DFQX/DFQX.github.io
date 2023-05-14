@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>添加utterances评论插件</title>
+    <link href="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/"/>
+    <url>/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-安装utterances"><a href="#1-安装utterances" class="headerlink" title="1. 安装utterances"></a>1. 安装utterances</h2><p>先登录Github，创建一个仓库，名字可以自取，这里取“commit-utterances”。  </p><p>点击<a href="https://github.com/apps/utterances">app 安装</a>进入下面页面  </p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514154451258.png" alt="image-20230514154451258"></p><p>点击“Install”后，跳转到下面页面，选择“Only select repositories”,找到commit-utterances。  </p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514154827034.png" alt="image-20230514154827034"></p><p>后面需要输入密码进行登录。 </p><p>配置，填写repo</p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514160028131.png" alt="image-20230514160028131"></p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514160220274.png" alt="image-20230514160220274"></p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514160422327.png" alt="image-20230514160422327"></p><p>上面的最后一栏，Enable Utterances自动生成配置脚本。</p><h2 id="2-配置Hexo-Fluid"><a href="#2-配置Hexo-Fluid" class="headerlink" title="2. 配置Hexo-Fluid"></a>2. 配置Hexo-Fluid</h2><p>在Hexo-Fluid博客目录中，打开_config.fluid.yml文件，找到评论插件部分，参数设置如下：</p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514160747529.png" alt="image-20230514160747529"></p><p>具体的配置如下：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">utterances:</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">DFQX/commit-utterances</span><br>  <span class="hljs-attr">issue_term:</span> <span class="hljs-string">title</span><br>  <span class="hljs-attr">label:</span> <span class="hljs-comment">#</span><br>  <span class="hljs-attr">theme:</span> <span class="hljs-string">github-light</span><br>  <span class="hljs-attr">theme_dark:</span> <span class="hljs-string">github-dark</span><br>  <span class="hljs-attr">crossorigin:</span> <span class="hljs-string">anonymous</span><br></code></pre></td></tr></table></figure><p>重新clean后进行生成部署，可以看到，评论界面了：</p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514170631633.png" alt="image-20230514170631633"></p><p>这个时候发现，鼠标停留在上面时，被禁用状态，登录你的Github</p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514170748843.png" alt="image-20230514170748843"></p><p>现在发现可以进行评论了</p><p><img src="/2023/05/14/%E6%B7%BB%E5%8A%A0utterances%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/image-20230514170905667.png" alt="image-20230514170905667"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机技术</category>
+      
+      <category>Hexo blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>湖畔书屋</title>
     <link href="/2023/05/14/%E6%B9%96%E7%95%94%E4%B9%A6%E5%B1%8B/"/>
     <url>/2023/05/14/%E6%B9%96%E7%95%94%E4%B9%A6%E5%B1%8B/</url>
@@ -126,31 +153,6 @@
     <categories>
       
       <category>图像处理</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>分类首页</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>生活与旅行</title>
-    <link href="/2023/03/16/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%97%85%E8%A1%8C/"/>
-    <url>/2023/03/16/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%97%85%E8%A1%8C/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>生活与旅行</category>
       
     </categories>
     

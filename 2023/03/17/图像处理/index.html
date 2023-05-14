@@ -549,8 +549,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/16/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%97%85%E8%A1%8C/" title="生活与旅行">
-                        <span class="hidden-mobile">生活与旅行</span>
+                      <a href="/2023/03/16/%E8%AF%AD%E8%A8%80%E4%B8%8E%E6%96%87%E5%AD%A6/" title="语言与文学">
+                        <span class="hidden-mobile">语言与文学</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -565,6 +565,30 @@
   
     <article id="comments" lazyload>
       
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'DFQX/commit-utterances');
+      s.setAttribute('issue-term', 'title');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
     </article>
   
